@@ -95,25 +95,25 @@ export default function DashboardPage() {
           <StatsCard
             title="Total Students"
             value={stats?.students.total || 0}
-            leftIcon={<Users className="h-6 w-6" />}
+            icon={<Users className="h-6 w-6" />}
             iconBg="bg-blue-100"
           />
           <StatsCard
             title="Total Staff"
             value={stats?.staff.total || 0}
-            leftIcon={<GraduationCap className="h-6 w-6" />}
+            icon={<GraduationCap className="h-6 w-6" />}
             iconBg="bg-green-100"
           />
           <StatsCard
             title="Fee Collection"
             value={formatCurrency(stats?.fees.collected || 0)}
-            leftIcon={<DollarSign className="h-6 w-6" />}
+            icon={<DollarSign className="h-6 w-6" />}
             iconBg="bg-yellow-100"
           />
           <StatsCard
             title="Today's Attendance"
             value={`${stats?.todayAttendance.present || 0} / ${(stats?.todayAttendance.present || 0) + (stats?.todayAttendance.absent || 0)}`}
-            leftIcon={<Calendar className="h-6 w-6" />}
+            icon={<Calendar className="h-6 w-6" />}
             iconBg="bg-purple-100"
           />
         </div>
