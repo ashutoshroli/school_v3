@@ -4,6 +4,7 @@ import React from 'react';
 import { UserPlus, Plus, FileText, CheckCircle, Clock, AlertCircle } from 'lucide-react';
 import { Button, Card } from '@/components/ui';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function AdmissionPage() {
   return (
     <div className="space-y-6">
