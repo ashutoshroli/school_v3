@@ -1,0 +1,32 @@
+{
+  "name": "school-erp-db",
+  "version": "1.0.0",
+  "description": "Database schemas, migrations, and seeds for Multi-Branch School ERP",
+  "scripts": {
+    "init": "psql -f init.sql",
+    "create-global": "psql -f schemas/global_schema.sql",
+    "create-branch-1": "sed 's/template/branch_1/g' schemas/branch_template.sql | psql",
+    "create-branch-2": "sed 's/template/branch_2/g' schemas/branch_template.sql | psql",
+    "create-branch-3": "sed 's/template/branch_3/g' schemas/branch_template.sql | psql",
+    "seed-global": "psql -f seeds/global_seed.sql",
+    "seed-branch-1": "sed 's/template/branch_1/g' seeds/branch_seed.sql | psql",
+    "seed-branch-2": "sed 's/template/branch_2/g' seeds/branch_seed.sql | psql",
+    "seed-branch-3": "sed 's/template/branch_3/g' seeds/branch_seed.sql | psql",
+    "setup": "npm run init && npm run create-global && npm run create-branch-1 && npm run seed-global && npm run seed-branch-1",
+    "test": "node test/test-connection.js"
+  },
+  "keywords": [
+    "school",
+    "erp",
+    "education",
+    "postgresql"
+  ],
+  "author": "School ERP Team",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
