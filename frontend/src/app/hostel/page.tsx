@@ -12,7 +12,7 @@ export default function HostelPage() {
           <h1 className="text-2xl font-bold text-secondary-900">Hostel Management</h1>
           <p className="text-secondary-500 mt-1">Room types: Single, Double, Triple, Custom | RFID attendance</p>
         </div>
-        <Button icon={<Plus className="h-4 w-4" />}>Add Room</Button>
+        <Button leftIcon={<Plus className="h-4 w-4" />}>Add Room</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

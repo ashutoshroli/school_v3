@@ -13,8 +13,8 @@ export default function FeesPage() {
           <p className="text-secondary-500 mt-1">Track fee collection and pending payments</p>
         </div>
         <div className="flex gap-2">
-          <Button variant="outline" icon={<Download className="h-4 w-4" />}>Export Report</Button>
-          <Button icon={<Plus className="h-4 w-4" />}>Collect Fee</Button>
+          <Button variant="outline" leftIcon={<Download className="h-4 w-4" />}>Export Report</Button>
+          <Button leftIcon={<Plus className="h-4 w-4" />}>Collect Fee</Button>
         </div>
       </div>
 

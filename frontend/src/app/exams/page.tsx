@@ -12,7 +12,7 @@ export default function ExamsPage() {
           <h1 className="text-2xl font-bold text-secondary-900">Examination</h1>
           <p className="text-secondary-500 mt-1">Manage exams, schedules, and results</p>
         </div>
-        <Button icon={<Plus className="h-4 w-4" />}>Create Exam</Button>
+        <Button leftIcon={<Plus className="h-4 w-4" />}>Create Exam</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -65,7 +65,7 @@ export default function ExamsPage() {
       <Card>
         <div className="p-4 border-b border-secondary-200 flex items-center justify-between">
           <h2 className="font-semibold text-secondary-900">Upcoming Exams</h2>
-          <Button variant="outline" size="sm" icon={<Download className="h-4 w-4" />}>Export Schedule</Button>
+          <Button variant="outline" size="sm" leftIcon={<Download className="h-4 w-4" />}>Export Schedule</Button>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full">

@@ -12,7 +12,7 @@ export default function AdmissionPage() {
           <h1 className="text-2xl font-bold text-secondary-900">Admission Management</h1>
           <p className="text-secondary-500 mt-1">Enquiry → Application → Entrance Test → Approval → Payment</p>
         </div>
-        <Button icon={<Plus className="h-4 w-4" />}>New Admission</Button>
+        <Button leftIcon={<Plus className="h-4 w-4" />}>New Admission</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">

@@ -12,7 +12,7 @@ export default function TransportPage() {
           <h1 className="text-2xl font-bold text-secondary-900">Transport Management</h1>
           <p className="text-secondary-500 mt-1">Manage buses, routes, drivers, GPS tracking & diesel</p>
         </div>
-        <Button icon={<Plus className="h-4 w-4" />}>Add Vehicle</Button>
+        <Button leftIcon={<Plus className="h-4 w-4" />}>Add Vehicle</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">

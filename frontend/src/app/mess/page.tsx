@@ -12,7 +12,7 @@ export default function MessPage() {
           <h1 className="text-2xl font-bold text-secondary-900">Mess Management</h1>
           <p className="text-secondary-500 mt-1">Meal plans: week-wise, veg/non-veg | Monthly fixed billing</p>
         </div>
-        <Button icon={<Plus className="h-4 w-4" />}>Add Menu</Button>
+        <Button leftIcon={<Plus className="h-4 w-4" />}>Add Menu</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

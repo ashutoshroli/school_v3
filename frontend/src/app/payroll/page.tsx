@@ -13,8 +13,8 @@ export default function PayrollPage() {
           <p className="text-secondary-500 mt-1">Appraisal ratings, salary structure, increments</p>
         </div>
         <div className="flex gap-2">
-          <Button variant="outline" icon={<Calculator className="h-4 w-4" />}>Calculate Salary</Button>
-          <Button icon={<FileText className="h-4 w-4" />}>Run Payroll</Button>
+          <Button variant="outline" leftIcon={<Calculator className="h-4 w-4" />}>Calculate Salary</Button>
+          <Button leftIcon={<FileText className="h-4 w-4" />}>Run Payroll</Button>
         </div>
       </div>
 

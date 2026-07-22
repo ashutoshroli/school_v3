@@ -21,7 +21,7 @@ export default function AttendancePage() {
             onChange={(e) => setSelectedDate(e.target.value)}
             className="px-4 py-2 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
           />
-          <Button variant="outline" icon={<Download className="h-4 w-4" />}>Export</Button>
+          <Button variant="outline" leftIcon={<Download className="h-4 w-4" />}>Export</Button>
         </div>
       </div>
 

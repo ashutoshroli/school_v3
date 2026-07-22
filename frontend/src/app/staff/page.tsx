@@ -12,7 +12,7 @@ export default function StaffPage() {
           <h1 className="text-2xl font-bold text-secondary-900">Staff Management</h1>
           <p className="text-secondary-500 mt-1">Manage teachers and staff members</p>
         </div>
-        <Button icon={<Plus className="h-4 w-4" />}>Add Staff</Button>
+        <Button leftIcon={<Plus className="h-4 w-4" />}>Add Staff</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -45,9 +45,9 @@ export default function StaffPage() {
                 className="pl-10 pr-4 py-2 border border-secondary-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500"
               />
             </div>
-            <Button variant="outline" size="sm" icon={<Filter className="h-4 w-4" />}>Filter</Button>
+            <Button variant="outline" size="sm" leftIcon={<Filter className="h-4 w-4" />}>Filter</Button>
           </div>
-          <Button variant="outline" size="sm" icon={<Download className="h-4 w-4" />}>Export</Button>
+          <Button variant="outline" size="sm" leftIcon={<Download className="h-4 w-4" />}>Export</Button>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full">

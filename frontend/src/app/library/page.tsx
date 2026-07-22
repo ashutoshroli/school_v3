@@ -12,7 +12,7 @@ export default function LibraryPage() {
           <h1 className="text-2xl font-bold text-secondary-900">Library Management</h1>
           <p className="text-secondary-500 mt-1">Manage books, issues, and fines</p>
         </div>
-        <Button icon={<Plus className="h-4 w-4" />}>Add Book</Button>
+        <Button leftIcon={<Plus className="h-4 w-4" />}>Add Book</Button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
