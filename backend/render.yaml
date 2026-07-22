@@ -1,0 +1,43 @@
+# Render.yaml - Backend Web Service Configuration
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: school-erp-backend
+    env: node
+    region: oregon # or singapore, frankfurt, etc.
+    plan: free # upgrade to starter/pro for production
+    branch: main
+    rootDir: backend
+    
+    # Build configuration
+    buildCommand: npm install
+    startCommand: npm start
+    
+    # Auto-deploy on push to main
+    autoDeploy: true
+    
+    # Health check
+    healthCheckPath: /api/health
+    
+    # Environment variables
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        sync: false # Set manually in Render dashboard
+      - key: JWT_SECRET
+        generateValue: true # Auto-generate or set manually
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: FRONTEND_URL
+        sync: false # Set to your Vercel frontend URL
+
+# Database (optional - use Neon instead)
+# databases:
+#   - name: school-erp-db
+#     databaseName: school_erp
+#     user: school_erp_user
+#     plan: free
